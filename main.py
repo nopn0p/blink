@@ -2,9 +2,9 @@ from os import sys
 from os import system 
 import time
 
-led_interval = 0.1
-bit_interval = 0.3
-byte_interval = 0.6
+led_interval = 0.01
+bit_interval = 0.03
+byte_interval = 0.06
 
 def led(state): 
     if state == 1: 
@@ -57,6 +57,6 @@ def main():
             bytecount += 1 
             time.sleep(byte_interval)
     print("Transmitted %s bytes in %s seconds." % (bytecount, (time.time() - start))) 
-    print("Bitrate of %s" % (bytecount*8/(time.time() - start)))
+    print("Bitrate: %s" % (bytecount*8/(time.time() - start)))
 main() 
 

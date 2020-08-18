@@ -12,5 +12,4 @@ You can set 3 values in main.py: `led_interval`, `bit_interval` and `byte_interv
 2. `bit_interval` determines the time that passes between the transmission of each bit. 
 3. `byte_interval` determines the time that passes between the transmission of each byte. 
 
-### references 
 
